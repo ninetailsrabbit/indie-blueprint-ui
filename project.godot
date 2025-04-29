@@ -10,11 +10,16 @@ config_version=5
 
 [application]
 
-config/name="godot-plugin-template"
-config/description="My personal template to create new plugins with placeholders to replace"
+config/name="IndieBlueprint-UI"
+config/description="A set of UI components
+"
 config/version="1.0.0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ninetailsrabbit.indie_blueprint_ui/plugin.cfg")
 
 [rendering]
 
