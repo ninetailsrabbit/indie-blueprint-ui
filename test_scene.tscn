@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://cs1iau1g46j5e"]
+
+[ext_resource type="Script" uid="uid://cdaj6whs04810" path="res://test_scene.gd" id="1_uhqqe"]
+
+[node name="TestScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uhqqe")
+
+[node name="ShrinkButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 146.0
+offset_right = 183.0
+offset_bottom = 177.0
+text = "SHRINK"
+
+[node name="PopButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 198.0
+offset_right = 184.0
+offset_bottom = 229.0
+text = "POP"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.0
+offset_top = -137.0
+offset_right = 152.0
+offset_bottom = 137.0
+grow_horizontal = 2
+grow_vertical = 2

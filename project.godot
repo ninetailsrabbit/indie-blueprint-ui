@@ -17,6 +17,10 @@ config/version="1.0.0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+IndieBlueprintUIAnimation="*res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/ui_animation.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/ninetailsrabbit.indie_blueprint_ui/plugin.cfg")
