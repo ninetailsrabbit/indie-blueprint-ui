@@ -12,5 +12,3 @@ enum PivotOffset {
 @export var time: float = 0.3
 @export var transition: Tween.TransitionType
 @export var easing: Tween.EaseType
-@export var origin_scale: Vector2 = Vector2.ONE
-@export var target_scale: Vector2 = Vector2.ONE

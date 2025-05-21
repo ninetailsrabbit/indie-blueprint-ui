@@ -6,21 +6,17 @@
 [sub_resource type="Resource" id="Resource_2mig6"]
 script = ExtResource("2_iqv3v")
 pivot_offset = 0
-time = 0.3
+time = 0.4
 transition = 10
 easing = 0
-origin_scale = Vector2(1, 1)
-target_scale = Vector2(1, 1)
 metadata/_custom_type_script = "uid://c4gj1yb1simeo"
 
 [sub_resource type="Resource" id="Resource_iqv3v"]
 script = ExtResource("2_iqv3v")
-pivot_offset = 4
+pivot_offset = 0
 time = 0.3
 transition = 10
 easing = 0
-origin_scale = Vector2(1, 1)
-target_scale = Vector2(0, 0)
 metadata/_custom_type_script = "uid://c4gj1yb1simeo"
 
 [sub_resource type="Resource" id="Resource_x5ca6"]
@@ -29,8 +25,6 @@ pivot_offset = 0
 time = 0.3
 transition = 10
 easing = 1
-origin_scale = Vector2(0, 0)
-target_scale = Vector2(1, 1)
 metadata/_custom_type_script = "uid://c4gj1yb1simeo"
 
 [node name="UIAnimations" type="Node"]
