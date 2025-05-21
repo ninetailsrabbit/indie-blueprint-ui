@@ -45,7 +45,7 @@ func _enter_tree() -> void:
 		null
 	)
 	
-	add_autoload_singleton("IndieBlueprintUIAnimation", "res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/ui_animation.gd")
+	add_autoload_singleton("IndieBlueprintUIAnimation", "res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/ui_animation.tscn")
 	
 	
 func _exit_tree() -> void:

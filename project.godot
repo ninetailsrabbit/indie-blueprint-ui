@@ -19,7 +19,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-IndieBlueprintUIAnimation="*res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/ui_animation.gd"
+IndieBlueprintUIAnimation="*res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/ui_animation.tscn"
 
 [editor_plugins]
 

@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://wvm1cw86t876"]
+
+[ext_resource type="Script" uid="uid://d1cms4s8i6j8l" path="res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/ui_animation.gd" id="1_saue1"]
+[ext_resource type="Script" uid="uid://c4gj1yb1simeo" path="res://addons/ninetailsrabbit.indie_blueprint_ui/src/animations/animation_options.gd" id="2_iqv3v"]
+
+[sub_resource type="Resource" id="Resource_2mig6"]
+script = ExtResource("2_iqv3v")
+pivot_offset = 0
+time = 0.3
+transition = 10
+easing = 0
+origin_scale = Vector2(1, 1)
+target_scale = Vector2(1, 1)
+metadata/_custom_type_script = "uid://c4gj1yb1simeo"
+
+[sub_resource type="Resource" id="Resource_iqv3v"]
+script = ExtResource("2_iqv3v")
+pivot_offset = 4
+time = 0.3
+transition = 10
+easing = 0
+origin_scale = Vector2(1, 1)
+target_scale = Vector2(0, 0)
+metadata/_custom_type_script = "uid://c4gj1yb1simeo"
+
+[sub_resource type="Resource" id="Resource_x5ca6"]
+script = ExtResource("2_iqv3v")
+pivot_offset = 0
+time = 0.3
+transition = 10
+easing = 1
+origin_scale = Vector2(0, 0)
+target_scale = Vector2(1, 1)
+metadata/_custom_type_script = "uid://c4gj1yb1simeo"
+
+[node name="UIAnimations" type="Node"]
+script = ExtResource("1_saue1")
+screen_to_animation_options = SubResource("Resource_2mig6")
+shrink_animation_options = SubResource("Resource_iqv3v")
+pop_animation_options = SubResource("Resource_x5ca6")
