@@ -1,6 +1,38 @@
-[gd_scene load_steps=2 format=3 uid="uid://cs1iau1g46j5e"]
+[gd_scene load_steps=2 format=3 uid="uid://4w7k836qf8qe"]
 
-[ext_resource type="Script" uid="uid://cdaj6whs04810" path="res://test_scene.gd" id="1_uhqqe"]
+[sub_resource type="GDScript" id="GDScript_6adnx"]
+script/source = "extends Control
+
+@onready var shrink_button: Button = $ShrinkButton
+@onready var pop_button: Button = $PopButton
+@onready var from_screen_left_to: Button = $FromScreenLeftTo
+@onready var from_screen_right_to: Button = $FromScreenRightTo
+
+@onready var panel: Panel = $Panel
+
+
+func _ready() -> void:
+	shrink_button.pressed.connect(on_shrink_button_pressed)
+	pop_button.pressed.connect(on_pop_button_pressed)
+	from_screen_left_to.pressed.connect(on_from_screen_left_to_pressed)
+	from_screen_right_to.pressed.connect(on_from_screen_right_to_pressed)
+	
+	
+func on_shrink_button_pressed() -> void:
+	IndieBlueprintUIAnimation.shrink(panel)
+
+
+func on_pop_button_pressed() -> void:
+	IndieBlueprintUIAnimation.pop(panel)
+
+
+func on_from_screen_left_to_pressed() -> void:
+	IndieBlueprintUIAnimation.screen_left_to_position(panel)
+
+
+func on_from_screen_right_to_pressed() -> void:
+	IndieBlueprintUIAnimation.screen_right_to_position(panel)
+"
 
 [node name="TestScene" type="Control"]
 layout_mode = 3
@@ -9,7 +41,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_uhqqe")
+script = SubResource("GDScript_6adnx")
 
 [node name="ShrinkButton" type="Button" parent="."]
 layout_mode = 0
@@ -26,6 +58,22 @@ offset_top = 198.0
 offset_right = 184.0
 offset_bottom = 229.0
 text = "POP"
+
+[node name="FromScreenLeftTo" type="Button" parent="."]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 258.0
+offset_right = 187.0
+offset_bottom = 289.0
+text = "FROM SCREEN LEFT TO"
+
+[node name="FromScreenRightTo" type="Button" parent="."]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 331.0
+offset_right = 300.0
+offset_bottom = 362.0
+text = "FROM SCREEN RIGHT  TO"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
